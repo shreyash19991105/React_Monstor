@@ -1,6 +1,9 @@
+import BasicEffect from "./components/BasicEffect";
 import Card from "./components/Card";
 import Counter from "./components/Counter";
+import CounterEffect from "./components/CounterEffect";
 import EventDemo from "./components/EventDemo";
+import FetchDataEffect from "./components/FetchDataEffect";
 import Footer from "./components/Footer";
 import Greeting from "./components/Greeting";
 import Header from "./components/Header";
@@ -66,6 +69,9 @@ function App() {
       <TodoList />
       <Profile />
       <ShoppingList />
+      <BasicEffect />
+      <CounterEffect />
+      <FetchDataEffect />
       <Footer />
     </>
   );
