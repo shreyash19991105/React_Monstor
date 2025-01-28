@@ -2,6 +2,7 @@ import BasicEffect from "./components/BasicEffect";
 import Card from "./components/Card";
 import Counter from "./components/Counter";
 import CounterEffect from "./components/CounterEffect";
+import CounterReducer from "./components/CounterReducer";
 import EventDemo from "./components/EventDemo";
 import FetchDataEffect from "./components/FetchDataEffect";
 import Footer from "./components/Footer";
@@ -17,6 +18,9 @@ import ProfileCard from "./components/ProfileCard";
 import ShoppingList from "./components/ShoppingList";
 import StyleCard from "./components/StyleCard";
 import TodoList from "./components/TodoList";
+import UpdateUser from "./components/UpdateUser";
+import { UserProvider } from "./components/UserContext";
+import UserProfile from "./components/UserProfile";
 import UserStatus from "./components/UserStatus";
 import Weather from "./components/Weather";
 
@@ -72,6 +76,13 @@ function App() {
       <BasicEffect />
       <CounterEffect />
       <FetchDataEffect />
+
+      <UserProvider>
+        <UserProfile />
+        <UpdateUser />
+      </UserProvider>
+
+      <CounterReducer />
       <Footer />
     </>
   );
