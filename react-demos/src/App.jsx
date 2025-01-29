@@ -5,6 +5,7 @@ import CounterEffect from "./components/CounterEffect";
 import CounterReducer from "./components/CounterReducer";
 import EventDemo from "./components/EventDemo";
 import FetchDataEffect from "./components/FetchDataEffect";
+import FocusInput from "./components/FocusInput";
 import Footer from "./components/Footer";
 import Greeting from "./components/Greeting";
 import Header from "./components/Header";
@@ -17,6 +18,7 @@ import Profile from "./components/Profile";
 import ProfileCard from "./components/ProfileCard";
 import ShoppingList from "./components/ShoppingList";
 import StyleCard from "./components/StyleCard";
+import Timer from "./components/Timer";
 import TodoList from "./components/TodoList";
 import UpdateUser from "./components/UpdateUser";
 import { UserProvider } from "./components/UserContext";
@@ -83,6 +85,8 @@ function App() {
       </UserProvider>
 
       <CounterReducer />
+      <FocusInput />
+      <Timer />
       <Footer />
     </>
   );
